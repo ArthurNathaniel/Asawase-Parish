@@ -50,8 +50,12 @@
 </html>
 <style>
     @media only screen and (max-width: 900px) {
-        body {
+        *{
             overflow-x: hidden;
+        }
+        body {
+            /* overflow-x: hidden; */
+            width: 100%;
         }
 
         .whole {
@@ -82,17 +86,21 @@
         .one {
             display: none;
         }
+form{
+    display: block;
+    width: 100%;
+}
 
-        .two {
-            height: 100vh;
-           display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          align-self: center;
-         
-          
-        }
+       .two {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-self: center;
+	width: 95%;
+	height: 100vh;
+	margin: 0 10%;
+}
     }
 
     @media only screen and (max-width: 600px) {
@@ -103,7 +111,14 @@
         }
 
         .two {
-            display: block;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            align-self: center;
+            width: 100%;
+            height: 100vh;
         }
+      
     }
 </style>
